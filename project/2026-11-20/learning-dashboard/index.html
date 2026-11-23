@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的学习仪表盘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="dashboard">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">FULLSTACK AI AGENT ROADMAP</p>
+        <h1>我的学习仪表盘</h1>
+        <p class="description">记录学习进度，坚持每天完成一个小目标。</p>
+      </div>
+
+      <div class="today">
+        <span>今日目标</span>
+        <strong>学习 · 实践 · 复盘</strong>
+      </div>
+    </header>
+
+    <section class="progress-card">
+      <div class="progress-heading">
+        <div>
+          <p class="section-label">LEARNING PROGRESS</p>
+          <h2>总体学习进度</h2>
+        </div>
+
+        <strong id="progressPercent">0%</strong>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div class="progress-summary">
+        <span id="taskProgress">已完成 0 / 0 个任务</span>
+        <span id="chapterProgress">已完成 0 / 10 个章节</span>
+      </div>
+    </section>
+
+    <section class="chapters-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">ROADMAP</p>
+          <h2>学习路线</h2>
+        </div>
+
+        <button id="resetButton" class="reset-button" type="button">
+          重置进度
+        </button>
+      </div>
+
+      <div id="chaptersList" class="chapters-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
